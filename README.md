@@ -62,6 +62,12 @@ Currently included queries:
 - [Win32_LocalTime](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/wmitimepprov/win32-localtime)
 - [Win32_TimeZone](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-timezone)
 
+[](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--desktop-management)
+
+- [Win32_Desktop](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-desktop)
+- [Win32_DesktopMonitor](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-desktopmonitor)
+- [Win32_StartupCommand](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-startupcommand)
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:

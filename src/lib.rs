@@ -65,6 +65,7 @@ pub mod accounts_and_domains;
 pub mod computer_hardware;
 pub mod computer_software;
 pub mod date_and_times;
+pub mod desktop_management;
 
 use std::collections::HashMap;
 
