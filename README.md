@@ -62,11 +62,21 @@ Currently included queries:
 - [Win32_LocalTime](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/wmitimepprov/win32-localtime)
 - [Win32_TimeZone](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-timezone)
 
-[](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--desktop-management)
+[Desktop Management](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--desktop-management)
 
 - [Win32_Desktop](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-desktop)
 - [Win32_DesktopMonitor](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-desktopmonitor)
 - [Win32_StartupCommand](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-startupcommand)
+
+[Disks and File Systems](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--disks-and-file-systems)
+
+- [Win32_DiskQuota](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/wmipdskq/win32-diskquota)
+- [Win32_VolumeChangeEvent](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-volumechangeevent)
+- [Win32_LogicalDisk](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-logicaldisk)
+- [Win32_MappedLogicalDisk](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-mappedlogicaldisk)
+- [Win32_Volume](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394515(v=vs.85))
+- [Win32_DiskDrive](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-diskdrive)
+- [Win32_DiskPartition](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-diskpartition)
 
 ## Building your own queries
 
