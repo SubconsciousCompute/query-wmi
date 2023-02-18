@@ -1,6 +1,6 @@
 //! # query-wmi
 //!
-//! https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page
+//! <https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page>
 //!
 //! > Windows Management Instrumentation (WMI) is the infrastructure for management data and
 //! > operations on Windows-based operating systems. You can write WMI scripts or applications to
@@ -51,13 +51,17 @@
 //! use query_wmi::{Variant, WMIConnection};
 //!
 //! // this creates the function `get_CLASS_NAME()`
-//! wmi!(CLASS_NAME, r"path_to_namespace");
+//! wmi!{
+//! /// documentation
+//! CLASS_NAME, r"path_to_namespace"
+//! }
 //!
 //! // calling it
 //! let com_con = COMLibrary::new()?;
 //! dbg!(get_CLASS_NAME(com_con)?);
 //! ```
 
+pub mod accounts_and_domains;
 pub mod computer_hardware;
 pub mod computer_software;
 pub mod date_and_times;
@@ -73,12 +77,40 @@ pub type Query = Vec<HashMap<String, Variant>>;
 
 /// Our main macro to build queries.
 ///
-/// The first argument takes the WMI `class` name as it it followed by `Namespace` or where it is
-/// located.
+/// The first argument takes documentation followed by WMI `class` name and it is followed by
+/// `Namespace` or where it is located.
+/// ## Building your own queries
+///
+/// You can use the provided [`wmi`](crate::wmi) macro to make your own queries:
+///
+/// ```ignore
+/// #![allow(non_snake_case)]
+///
+/// use query_wmi::wmi;
+/// use query_wmi::Query;
+/// use paste::paste;
+/// use std::collections::HashMap;
+/// use query_wmi::COMLibrary;
+/// use query_wmi::{Variant, WMIConnection};
+///
+/// // this creates the function `get_CLASS_NAME()`
+/// wmi!{
+/// /// documentation
+/// CLASS_NAME, r"path_to_namespace"
+/// }
+///
+/// // calling it
+/// let com_con = COMLibrary::new()?;
+/// dbg!(get_CLASS_NAME(com_con)?);
+/// ```
 #[macro_export]
 macro_rules! wmi {
-    ($query: ident, $path: expr) => {
+    (
+        $(#[$attr:meta])*
+        $query: ident, $path: expr
+    ) => {
         paste!{
+            $(#[$attr])*
             pub fn [<get_ $query>](com_con: COMLibrary) -> Result<Query, Box<dyn std::error::Error>> {
                     let wmi_con = WMIConnection::with_namespace_path($path, com_con)?;
 

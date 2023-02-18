@@ -1,3 +1,5 @@
+//! <https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--computer-software>
+
 #![allow(non_snake_case)]
 
 use crate::wmi;
@@ -7,6 +9,7 @@ use crate::{Variant, WMIConnection};
 use paste::paste;
 use std::collections::HashMap;
 
-// https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--computer-software
-
-wmi!(Win32_Product, r"Root\CIMV2");
+wmi! {
+    /// <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)>
+    Win32_Product, r"Root\CIMV2"
+}
