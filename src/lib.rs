@@ -75,6 +75,7 @@ pub mod performance_monitoring;
 pub mod printers_and_printing;
 pub mod processes;
 pub mod registry;
+pub mod scheduled_tasks;
 
 use std::collections::HashMap;
 

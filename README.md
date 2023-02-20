@@ -118,6 +118,10 @@ Currently included queries:
 
 - [Win32_Registry](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-registry)
 
+[Scheduled Tasks](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--scheduled-tasks)
+
+- [Win32_ScheduledJob](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-scheduledjob)
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
