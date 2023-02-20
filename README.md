@@ -94,6 +94,11 @@ Currently included queries:
 - [Win32_NetworkAdapterConfiguration](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-networkadapterconfiguration)
 - [Win32_NetworkAdapter](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-networkadapter)
 
+[Operating Systems](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--operating-systems)
+
+- [Win32_QuickFixEngineering](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-quickfixengineering)
+- [Win32_WindowsProductActivation](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394520(v=vs.85))
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
