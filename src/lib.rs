@@ -74,6 +74,7 @@ pub mod operating_systems;
 pub mod performance_monitoring;
 pub mod printers_and_printing;
 pub mod processes;
+pub mod registry;
 
 use std::collections::HashMap;
 

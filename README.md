@@ -114,6 +114,10 @@ Currently included queries:
 
 - [Win32_Printer](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-printer)
 
+[Registry](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--registry)
+
+- [Win32_Registry](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-registry)
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
