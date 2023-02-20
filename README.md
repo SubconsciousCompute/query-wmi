@@ -105,6 +105,11 @@ Currently included queries:
 - [Win32_PerfFormattedData](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-perfformatteddata)
 - [Win32_PerfRawData](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-perfrawdata)
 
+[Processes](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--processes)
+
+- [Win32_Process](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-process)
+- [Win32_ProcessStartup](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-processstartup)
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:

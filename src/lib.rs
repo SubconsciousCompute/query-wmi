@@ -72,6 +72,7 @@ pub mod files_and_folders;
 pub mod networking;
 pub mod operating_systems;
 pub mod performance_monitoring;
+pub mod processes;
 
 use std::collections::HashMap;
 
