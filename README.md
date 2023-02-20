@@ -33,7 +33,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
-Currently included queries:
+## Return type
+
+`type Query = Vec<HashMap<String, Variant>>`.
+
+`String` is the name of the returned struct field with `Variant` being an enum type.
+
+## Currently included queries:
+
+The subsections were defined according
+to [WMI Tasks for Scripts and Applications](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications),
+you can find more classes [here](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/operating-system-classes).
 
 [Accounts and Domains](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--accounts-and-domains)
 

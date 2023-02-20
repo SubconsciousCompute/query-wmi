@@ -1,5 +1,3 @@
-use query_wmi::registry::get_Win32_Registry;
-use query_wmi::scheduled_tasks::get_Win32_ScheduledJob;
 use query_wmi::services::{get_Win32_DependentService, get_Win32_Service};
 use query_wmi::COMLibrary;
 
