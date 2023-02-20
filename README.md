@@ -89,6 +89,10 @@ Currently included queries:
 - [Win32_Share](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-share)
 - [Win32_Directory](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-directory)
 
+[Networking](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--networking)
+
+- [Win32_NetworkAdapterConfiguration](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-networkadapterconfiguration)
+- [Win32_NetworkAdapter](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-networkadapter)
 
 ## Building your own queries
 
