@@ -122,6 +122,11 @@ Currently included queries:
 
 - [Win32_ScheduledJob](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-scheduledjob)
 
+[Services](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--services)
+
+- [Win32_Service](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-service)
+- [Win32_DependentService](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-dependentservice)
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
