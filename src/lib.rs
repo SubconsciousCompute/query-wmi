@@ -140,7 +140,7 @@
 //! - [`Win32_Service`](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-service)
 //! - [`Win32_DependentService`](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-dependentservice)
 //!
-//! ## Building your own queries
+//! ## Building your own class queries
 //!
 //! You can use the provided [`wmi`](crate::wmi) macro to make your own queries:
 //!
@@ -164,6 +164,12 @@
 //! let com_con = COMLibrary::new()?;
 //! dbg!(get_CLASS_NAME(com_con)?);
 //! ```
+//!
+//! ### Building your own queries
+//!
+//! You can also replace `CLASS_NAME` with a query like `CLASS_NAME where SOME_CONDITION=VALUE`
+//!
+//! See [WQL Operators](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wql-operators)
 
 pub mod accounts_and_domains;
 pub mod computer_hardware;
@@ -198,7 +204,7 @@ pub type Query = Vec<HashMap<String, Variant>>;
 ///
 /// The first argument takes documentation followed by WMI `class` name and it is followed by
 /// `Namespace` or where it is located.
-/// ## Building your own queries
+/// ## Building your own class queries
 ///
 /// You can use the provided [`wmi`](crate::wmi) macro to make your own queries:
 ///
@@ -222,6 +228,12 @@ pub type Query = Vec<HashMap<String, Variant>>;
 /// let com_con = COMLibrary::new()?;
 /// dbg!(get_CLASS_NAME(com_con)?);
 /// ```
+///
+/// ### Building your own queries
+///
+/// You can also replace `CLASS_NAME` with a query like `CLASS_NAME where SOME_CONDITION=VALUE`
+///
+/// See [WQL Operators](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wql-operators)
 #[macro_export]
 macro_rules! wmi {
     (

@@ -137,7 +137,7 @@ you can find more classes [here](https://learn.microsoft.com/en-us/windows/win32
 - [Win32_Service](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-service)
 - [Win32_DependentService](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-dependentservice)
 
-## Building your own queries
+## Building your own class queries
 
 You can use the provided `wmi` macro to make your own queries:
 
@@ -161,3 +161,9 @@ wmi! {
 let com_con = COMLibrary::new() ?;
 dbg!(get_CLASS_NAME(com_con)?);
 ```
+
+### Building your own queries
+
+You can also replace `CLASS_NAME` with a query like `CLASS_NAME where SOME_CONDITION=VALUE`
+
+See [WQL Operators](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wql-operators)
