@@ -1,5 +1,9 @@
 # query_wmi
 
+[![Rust](https://github.com/SubconsciousCompute/query-wmi/actions/workflows/rust.yml/badge.svg?branch=master)](https://github.com/SubconsciousCompute/query-wmi/actions/workflows/rust.yml)
+[![Crates.io](https://img.shields.io/crates/v/query-wmi)](https://crates.io/crates/query-wmi)
+[![docs.rs](https://img.shields.io/docsrs/query-wmi)](https://docs.rs/query-wmi/latest/query-wmi/)
+
 A crate to query `WMI` classes in windows
 
 https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page
