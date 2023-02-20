@@ -68,6 +68,7 @@ pub mod date_and_times;
 pub mod desktop_management;
 pub mod disks_and_file_systems;
 pub mod event_logs;
+pub mod files_and_folders;
 
 use std::collections::HashMap;
 

@@ -83,6 +83,13 @@ Currently included queries:
 - [Win32_NTLogEvent](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent)
 - [Win32_NTEventlogFile](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))
 
+[Files and Folders](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--files-and-folders)
+
+- [CIM_DataFile](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/cim-datafile)
+- [Win32_Share](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-share)
+- [Win32_Directory](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-directory)
+
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
