@@ -10,10 +10,6 @@ use paste::paste;
 use std::collections::HashMap;
 
 wmi! {
-    /// <https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-operatingsystem>
-    Win32_OperatingSystem, r"Root\CIMV2"
-}
-wmi! {
     /// <https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-cdromdrive>
     Win32_CDROMDrive, r"Root\CIMV2"
 }

@@ -42,7 +42,6 @@ Currently included queries:
 
 [Computer Hardware](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--computer-hardware)
 
-- [Win32_OperatingSystem](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-operatingsystem)
 - [Win32_CDROMDrive](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-cdromdrive)
 - [Win32_ComputerSystem](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-computersystem)
 - [Win32_PCMCIAController](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-pcmciacontroller)
@@ -96,8 +95,15 @@ Currently included queries:
 
 [Operating Systems](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--operating-systems)
 
+- [Win32_OperatingSystem](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-operatingsystem)
 - [Win32_QuickFixEngineering](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-quickfixengineering)
 - [Win32_WindowsProductActivation](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394520(v=vs.85))
+
+[Performance Monitoring](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--performance-monitoring)
+
+- [Win32_Perf](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-perf)
+- [Win32_PerfFormattedData](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-perfformatteddata)
+- [Win32_PerfRawData](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-perfrawdata)
 
 ## Building your own queries
 
