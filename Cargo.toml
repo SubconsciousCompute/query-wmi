@@ -9,7 +9,7 @@ homepage = "https://github.com/SubconsciousCompute/query-wmi"
 keywords = ["wmi", "query", "windows", "win32", "com"]
 readme = "README.md"
 documentation = "https://docs.rs/query-wmi"
-license = "AGPL"
+license = "AGPL-3.0-only"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
