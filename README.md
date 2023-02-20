@@ -78,6 +78,11 @@ Currently included queries:
 - [Win32_DiskDrive](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-diskdrive)
 - [Win32_DiskPartition](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-diskpartition)
 
+[Event Logs](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--event-logs)
+
+- [Win32_NTLogEvent](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent)
+- [Win32_NTEventlogFile](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))
+
 ## Building your own queries
 
 You can use the provided `wmi` macro to make your own queries:
