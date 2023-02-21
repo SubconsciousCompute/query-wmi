@@ -1,6 +1,6 @@
 [package]
 name = "query-wmi"
-version = "1.1.1"
+version = "1.1.2"
 edition = "2021"
 authors = ["sn99 <siddharthn.099@gmail.com>"]
 description = "A crate to query WMI classes in Windows OS"
