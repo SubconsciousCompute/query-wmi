@@ -166,9 +166,3 @@ wmi! {
 let com_con = COMLibrary::new() ?;
 dbg!(get_CLASS_NAME(com_con)?);
 ```
-
-### Building your own queries
-
-You can also replace `CLASS_NAME` with a query like `CLASS_NAME where SOME_CONDITION=VALUE`
-
-See [WQL Operators](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wql-operators)
